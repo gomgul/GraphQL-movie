@@ -2,12 +2,25 @@
   "name": "GraphQL-movieAPI",
   "version": "1.0.0",
   "description": "Movie API with GraphQL",
-  "main": "https://github.com/gomgul/GraphQL-movie.git",
+  "main": "index.js",
   "repository": "https://github.com/gomgul/GraphQL-movie.git",
   "author": "gom <nobrain908@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "graphql-yoga": "^1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
   }
 }
